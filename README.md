@@ -49,5 +49,21 @@ Run the script using Python:
 
 ```sh
 python desktop_assistant.py
+```
+ Extending Functionality
 
+The application is modular, allowing for easy extension. You can add new features by defining additional functions and linking them to user commands in the `register_commands` method of the `DesktopAssistant` class.
+
+## Troubleshooting
+
+If you encounter any issues:
+
+- Check the Python and library versions to ensure compatibility.
+- Verify that all API keys are valid and have not expired.
+- Ensure that environment variables are correctly set.
+- For further assistance, consult the logging output for error details, which can provide insights into what might be going wrong.
+
+## Contributing
+
+Contributions to enhance or expand the application's capabilities are welcome. Please fork the repository, make your changes, and submit a pull request.
 
