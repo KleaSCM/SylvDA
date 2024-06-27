@@ -16,6 +16,14 @@ import psutil
 import imapclient
 import pyzmail
 
+# Set fake environment variables for testing purposes
+os.environ['OPENAI_API_KEY'] = 'your_openai_api_key'
+os.environ['WEATHER_API_KEY'] = 'your_weather_api_key'
+os.environ['NEWS_API_KEY'] = 'your_news_api_key'
+os.environ['EMAIL'] = 'your_email@example.com'
+os.environ['EMAIL_PASSWORD'] = 'your_email_password'
+os.environ['SYLVANAS_MODEL_PATH'] = 'path_to_sylvanas_model.obj'
+
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -213,7 +221,6 @@ class DesktopAssistant:
     def run_model_viewer(self):
         model_path = os.getenv('SYLVANAS_MODEL_PATH', 'path_to_sylvanas_model.obj')
 
-        class ModelViewerWindow
         class ModelViewerWindow(pyglet.window.Window):
             def __init__(self, width, height, title=''):
                 super().__init__(width, height, title)
@@ -269,4 +276,4 @@ if __name__ == "__main__":
     except Exception as e:
         logging.error(f"Error starting the desktop assistant: {str(e)}")
         print(f"Error starting the desktop assistant: {str(e)}")
-      
+
