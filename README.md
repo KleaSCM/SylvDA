@@ -1,71 +1,53 @@
-# My GitHub Pages Repository
+# Desktop Assistant
 
-This repository hosts my GitHub Pages site. GitHub Pages allows you to serve static web pages directly from a GitHub repository.
+This Desktop Assistant is a versatile and interactive application designed to help you manage daily tasks efficiently from your desktop. It offers a wide range of functionalities such as performing web searches, checking emails, managing system info, and even integrating with APIs to fetch news and weather updates.
 
-## Getting Started
+## Features
 
-To view the site, simply visit the following URL:
+- **Open Applications**: Open common applications like Notepad, Spotify, VS Code, and web browsers directly from the assistant.
+- **Web Searches**: Perform web searches and open websites like Wikipedia and YouTube.
+- **Weather Updates**: Fetch the current weather information for predefined locations.
+- **News Headlines**: Retrieve the latest news headlines.
+- **System Information**: Monitor CPU usage, memory usage, and disk usage.
+- **Email Checker**: Check for new emails in your inbox.
+- **Math Evaluations**: Solve math expressions and trigonometric calculations.
+- **Spelling Corrections**: Check and correct spelling mistakes.
+- **3D Model Viewer**: Open a window to display 3D models, specifically configured for Sylvanas Windrunner.
+- **Voice Interaction**: Input commands via voice (feature planned).
 
+## Installation
 
-## Repository Structure
+### Prerequisites
 
-The repository is structured as follows:
+- Python 3.6+
+- pip (Python package installer)
+- API Keys for OpenAI, Weather API, and News API
 
-- **`index.html`**: The main landing page for the site.
-- **`styles/`**: Directory containing CSS stylesheets.
-- **`scripts/`**: Directory containing JavaScript files.
-- **`images/`**: Directory containing images used on the site.
-- **`docs/`**: (Optional) Directory for documentation or additional resources.
+### Required Libraries
 
-## Setting Up GitHub Pages
+Install all required Python libraries with the following command:
 
-To enable GitHub Pages for this repository, follow these steps:
+```sh
+pip install tkinter requests openai wikipedia-api pyspellchecker pyglet psutil imapclient pyzmail subprocess
+## Environment Variables
 
-1. Go to your repository on GitHub.
-2. Click on the **Settings** tab.
-3. Scroll down to the **Pages** section on the left sidebar.
-4. Under **Source**, select the branch (e.g., `main` or `gh-pages`) and the folder (e.g., `/root` or `/docs`).
-5. Click **Save**.
+Ensure the following environment variables are set:
 
-## Making the Repository Public
+- **OPENAI_API_KEY**: Your OpenAI API key for GPT-3 queries.
+- **WEATHER_API_KEY**: API key for weather updates.
+- **NEWS_API_KEY**: API key for fetching news headlines.
+- **EMAIL**: Your email address for checking new emails.
+- **EMAIL_PASSWORD**: Password for your email account.
 
-For your GitHub Pages site to be accessible to everyone, ensure your repository is public:
+You can set these variables in your environment or directly in the script if security is not a concern.
 
-1. Go to your repository on GitHub.
-2. Click on the **Settings** tab.
-3. Scroll down to the **Danger Zone** section.
-4. Click **Change repository visibility**.
-5. Select **Public** and confirm the change.
+## Running the Desktop Assistant
 
-## Common Issues
+Navigate to the directory containing the script.
 
-### Access Denied
+Run the script using Python:
 
-If you encounter an "Access Denied" error, ensure that:
+```sh
+python desktop_assistant.py
 
-- The repository is set to public.
-- GitHub Pages is properly configured in the repository settings.
-
-### Incorrect URL
-
-Ensure you are using the correct URL format to access your site:
-
-
-## Contributing
-
-Contributions are welcome! Please follow these steps to contribute:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes and commit them (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Create a new Pull Request.
-
-## License
-
-This repository is licensed under the MIT License. See the `LICENSE` file for more details.
-
-## Contact
-
-For any questions or issues, please open an issue on GitHub or contact me directly at `<your-email@example.com>`.
 
