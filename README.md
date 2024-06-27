@@ -1,70 +1,71 @@
-Desktop Assistant
+# My GitHub Pages Repository
 
-This Desktop Assistant is a versatile and interactive application designed to help you manage daily tasks efficiently from your desktop. It offers a wide range of functionalities such as performing web searches, checking emails, managing system info, and even integrating with APIs to fetch news and weather updates.
+This repository hosts my GitHub Pages site. GitHub Pages allows you to serve static web pages directly from a GitHub repository.
 
-Features
+## Getting Started
 
-Open Applications: Open common applications like Notepad, Spotify, VS Code, and web browsers directly from the assistant.
-
-Web Searches: Perform web searches and open websites like Wikipedia and YouTube.
-
-Weather Updates: Fetch the current weather information for predefined locations.
-
-News Headlines: Retrieve the latest news headlines.
-
-System Information: Monitor CPU usage, memory usage, and disk usage.
-Email Checker: Check for new emails in your inbox.
-
-Math Evaluations: Solve math expressions and trigonometric calculations.
-
-Spelling Corrections: Check and correct spelling mistakes.
-
-3D Model Viewer: Open a window to display 3D models, specifically configured for Sylvanas Windrunner.
-
-Voice Interaction: Input commands via voice (feature planned).
+To view the site, simply visit the following URL:
 
 
-Installation
-Prerequisites
-Python 3.6+
-pip (Python package installer)
-API Keys for OpenAI, Weather API, and News API
+## Repository Structure
 
-Required Libraries--
+The repository is structured as follows:
 
-Install all required Python libraries 
-with the following command:
+- **`index.html`**: The main landing page for the site.
+- **`styles/`**: Directory containing CSS stylesheets.
+- **`scripts/`**: Directory containing JavaScript files.
+- **`images/`**: Directory containing images used on the site.
+- **`docs/`**: (Optional) Directory for documentation or additional resources.
 
-pip install tkinter requests openai wikipedia-api pyspellchecker pyglet psutil imapclient pyzmail subprocess
-Environment Variables
+## Setting Up GitHub Pages
 
-Ensure the following environment 
-variables are set:
+To enable GitHub Pages for this repository, follow these steps:
 
-OPENAI_API_KEY: Your OpenAI API key for GPT-3 queries.
-WEATHER_API_KEY: API key for weather updates.
-NEWS_API_KEY: API key for fetching news headlines.
-EMAIL: Your email address for checking new emails.
-EMAIL_PASSWORD: Password for your email account.
-You can set these variables in your environment or directly in the script if security is not a concern.
+1. Go to your repository on GitHub.
+2. Click on the **Settings** tab.
+3. Scroll down to the **Pages** section on the left sidebar.
+4. Under **Source**, select the branch (e.g., `main` or `gh-pages`) and the folder (e.g., `/root` or `/docs`).
+5. Click **Save**.
 
-To run the desktop assistant Navigate to the directory containing the script.
+## Making the Repository Public
 
-Run the script using Python:
+For your GitHub Pages site to be accessible to everyone, ensure your repository is public:
 
-python desktop_assistant.py
-The main window of the Desktop Assistant will open, and you can start interacting with it by typing commands into the input box or using predefined buttons for specific tasks.
+1. Go to your repository on GitHub.
+2. Click on the **Settings** tab.
+3. Scroll down to the **Danger Zone** section.
+4. Click **Change repository visibility**.
+5. Select **Public** and confirm the change.
 
-Extending Functionality
-The application is modular, allowing for easy extension. You can add new features by defining additional functions and linking them to user commands in the register_commands method of the DesktopAssistant class.
+## Common Issues
 
-Troubleshooting
-If you encounter any issues:
+### Access Denied
 
-Check the Python and library versions to ensure compatibility.
-Verify that all API keys are valid and have not expired.
-Ensure that environment variables are correctly set.
-For further assistance, consult the logging output for error details, which can provide insights into what might be going wrong.
+If you encounter an "Access Denied" error, ensure that:
 
-Contributing
-Contributions to enhance or expand the application's capabilities are welcome. Please fork the repository, make your changes, and submit a pull request.
+- The repository is set to public.
+- GitHub Pages is properly configured in the repository settings.
+
+### Incorrect URL
+
+Ensure you are using the correct URL format to access your site:
+
+
+## Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new Pull Request.
+
+## License
+
+This repository is licensed under the MIT License. See the `LICENSE` file for more details.
+
+## Contact
+
+For any questions or issues, please open an issue on GitHub or contact me directly at `<your-email@example.com>`.
+
