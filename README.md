@@ -27,7 +27,7 @@ This Desktop Assistant is a versatile and interactive application designed to he
 
 Install all required Python libraries with the following command:
 
-```sh
+``
 pip install tkinter requests openai wikipedia-api pyspellchecker pyglet psutil imapclient pyzmail subprocess
 ## Environment Variables
 
